@@ -5,4 +5,4 @@ Created on 2018年12月13日
 @author: xiaohui
 '''
 
-print "hello world"
+print "hello world!"
