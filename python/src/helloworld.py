@@ -5,7 +5,7 @@ Created on 2018年12月13日
 @author: xiaohui
 '''
 
-print "hello world!"
+print ("hello world!")
 
 
 '''
@@ -69,30 +69,30 @@ print('''line1
 line2
 line3''')
 
-print True
-print False
-print 3 > 2
-print 3 > 5
+print (True)
+print (False)
+print (3 > 2)
+print (3 > 5)
 print('--------------------') 
-print True and True
-print True and False
-print 5 > 3 and 3 > 1
+print (True and True)
+print (True and False)
+print (5 > 3 and 3 > 1)
 print('--------------------') 
-print True or True
-print True or False
-print False or True
+print (True or True)
+print (True or False)
+print (False or True)
 print('--------------------') 
-print not True
-print not False
+print (not True)
+print (not False)
 
 x = 10
 x = x + 2
-print x
-print 10 / 3
-print 10.0 / 3
-print 9 / 3
-print 10 // 3
-print 10 % 3
+print (x)
+print (10 / 3)
+print (10.0 / 3)
+print (9 / 3)
+print (10 // 3)
+print (10 % 3)
 
 '''
 list和tuple
@@ -104,33 +104,33 @@ list元素也可以是另一个list
 如果一个list中一个元素也没有，就是一个空的list，它的长度为0：
 '''
 classmates = ['Michael', 'Bob', 'Tracy']
-print classmates
+print (classmates)
 classmates.append('Adam')
-print classmates
+print (classmates)
 classmates.insert(1, 'Jack')
-print classmates
+print (classmates)
 classmates.pop()
-print classmates
+print (classmates)
 classmates[1] = 'Sarah'
-print classmates
+print (classmates)
 
 s = ['python', 'java', ['asp', 'php'], 'scheme']
-print len(s)
+print (len(s))
 
 L = []
-print len(L)
+print (len(L))
 
 t = (1, 2)
-print t
+print (t)
 
 L = [
     ['Apple', 'Google', 'Microsoft'],
     ['Java', 'Python', 'Ruby', 'PHP'],
     ['Adam', 'Bart', 'Lisa']
 ]
-print L[0][0],L[1][1],L[2][2]
-print L[1][2]
-print L[2][2]
+print (L[0][0],L[1][1],L[2][2])
+print (L[1][2])
+print (L[2][2])
 
 '''
 
@@ -191,7 +191,7 @@ print(sum)
 '''
 Python提供一个range()函数，可以生成一个整数序列，再通过list()函数可以转换为list
 '''
-print list(range(5))
+print (list(range(5)))
 
 sum = 0
 for x in range(101):
@@ -270,13 +270,13 @@ set和dict类似，也是一组key的集合，但不存储value。由于key不�
 要创建一个set，需要提供一个list作为输入集合：
 '''
 s = set([1, 2, 3])
-print s
+print (s)
 s = set([1, 1, 2, 2, 3, 3])
-print s
+print (s)
 s.add(4)
-print s
+print (s)
 s.remove(4)
-print s
+print (s)
 
 '''
 上面我们讲了，str是不变对象，而list是可变对象。
@@ -287,12 +287,12 @@ print s
 '''
 a = ['c', 'b', 'a']
 a.sort()
-print a
+print (a)
 
 a = 'abc'
 a.replace('a', 'A')
-print a
+print (a)
 
 a = 'abc'
 b = a.replace('a', 'A')
-print b
+print (b)
