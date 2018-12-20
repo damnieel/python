@@ -34,8 +34,11 @@ for i in range(1,int(pic_max) + 1):
 
     html = requests.get(pic_url['src'],headers = Picreferer)
 
+    #文件存放路径
+    file_path = r'C:\Users\CM20180419\Desktop\beauty'
+     
     #获取图片的名字方便命名
-    file_name = pic_url['src'].split(r'/')[-1]
+    file_name = file_path + '/' + pic_url['src'].split(r'/')[-1]
 
     #图片不是文本文件，以二进制格式写入，所以是html.content
     f = open(file_name,'wb')
