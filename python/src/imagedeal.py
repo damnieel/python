@@ -1,5 +1,5 @@
 #coding=utf-8
-#图片修复
+#图片修复 去水印
  
 import cv2
 import numpy as np
