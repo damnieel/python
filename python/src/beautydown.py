@@ -12,7 +12,7 @@ Picreferer = {
     'User-Agent':'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)',
     'Referer':'http://i.meizitu.net'
 }
-			   
+  
 html = requests.get(url,headers = Hostreferer)
 soup = BeautifulSoup(html.text,'html.parser')
 
