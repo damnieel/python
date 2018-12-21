@@ -42,5 +42,6 @@ for i in range(1,int(pic_max) + 1):
 
     #图片不是文本文件，以二进制格式写入，所以是html.content
     f = open(file_name,'wb')
+    print('开始下载文件'+file_name)
     f.write(html.content)
     f.close()
