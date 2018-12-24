@@ -4,7 +4,7 @@
 import cv2
 import numpy as np
  
-path = r'C:\Users\CM20180419\Desktop\08a32.jpg'
+path = r'C:\Users\CM20180419\Desktop\1.jpg'
  
 img = cv2.imread(path)
 hight, width, depth = img.shape[0:3]
@@ -26,7 +26,7 @@ specular = cv2.inpaint(img, hi_mask, 5, flags=cv2.INPAINT_TELEA)
 #cv2.namedWindow("newImage", 0)
 #cv2.resizeWindow("newImage", int(width / 2), int(hight / 2))
 #cv2.imshow("newImage", specular)
-cv2.imwrite(r'C:\Users\CM20180419\Desktop\08a32-d.jpg', specular, [int(cv2.IMWRITE_JPEG_QUALITY), 100])
+cv2.imwrite(r'C:\Users\CM20180419\Desktop\1-d.jpg', specular, [int(cv2.IMWRITE_JPEG_QUALITY), 100])
 #cv2.waitKey(0)
 #cv2.destroyAllWindows()
 
