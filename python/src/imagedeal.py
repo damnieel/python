@@ -4,7 +4,7 @@
 import cv2
 import numpy as np
  
-path = "img/inpaint.png"
+path = r'C:\Users\CM20180419\Desktop\08a32.jpg'
  
 img = cv2.imread(path)
 hight, width, depth = img.shape[0:3]
@@ -28,3 +28,4 @@ cv2.resizeWindow("newImage", int(width / 2), int(hight / 2))
 cv2.imshow("newImage", specular)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
