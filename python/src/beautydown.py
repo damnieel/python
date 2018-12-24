@@ -3,7 +3,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'http://www.mzitu.com/137017'
+url = 'http://www.mzitu.com/128783'
 Hostreferer = {
     'User-Agent':'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)',
     'Referer':'http://www.mzitu.com'
