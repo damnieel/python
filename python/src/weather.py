@@ -5,12 +5,15 @@ import webbrowser
 from PIL import Image
 from requests.exceptions import RequestException
 import csv
-
+#设置为utf-8 第一行会出现 \ufeff 这里采用utf-8-sig 具体原因 查看 https://www.cnblogs.com/chongzi1990/p/8694883.html
 data={}
-with open(r"C:\Users\CM20180419\Desktop\citycode.csv",'r',encoding='utf-8') as f:
+with open(r"C:\Users\CM20180419\Desktop\citycode.csv",'r',encoding='utf-8-sig') as f:
     rawinfos=list(csv.reader(f))
     for i in rawinfos:
         data[i[0]]=i[1]
+        
+print(data)
+    
 def get_one_page(url,headers):
     try:
         response=requests.get(url,headers=headers)
