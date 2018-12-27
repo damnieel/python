@@ -25,7 +25,7 @@ def get_one_page(url,headers):
         return None
 headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'}
 try:
-    address=data[input('city: ')]
+    address=data[input('请输入查询的城市: ')]
 except:
     sys.exit("请输入正确的城市")
 html=get_one_page('http://www.weather.com.cn/weather1d/'+address+'.shtml',headers)
