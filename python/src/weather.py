@@ -12,7 +12,7 @@ with open(r"C:\Users\CM20180419\Desktop\citycode.csv",'r',encoding='utf-8-sig') 
     for i in rawinfos:
         data[i[0]]=i[1]
         
-print(data)
+#print(data)
     
 def get_one_page(url,headers):
     try:
