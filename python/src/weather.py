@@ -5,7 +5,7 @@ import webbrowser
 from PIL import Image
 from requests.exceptions import RequestException
 import csv
-#设置为utf-8 第一行会出现 \ufeff 这里采用utf-8-sig 具体原因 查看 https://www.cnblogs.com/chongzi1990/p/8694883.html
+#设置为utf-8 第一行会出现 \ufeff 这里采用utf-8-sig 它叫BOM,是用来声明编码等信息的,但python会把它当作文本解析  相关信息查看 https://www.cnblogs.com/chongzi1990/p/8694883.html
 data={}
 with open(r"C:\Users\CM20180419\Desktop\citycode.csv",'r',encoding='utf-8-sig') as f:
     rawinfos=list(csv.reader(f))
