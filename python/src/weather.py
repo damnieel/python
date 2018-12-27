@@ -5,8 +5,9 @@ import webbrowser
 from PIL import Image
 from requests.exceptions import RequestException
 import csv
+
 data={}
-with open("citycode.csv",'r') as f:
+with open(r"C:\Users\CM20180419\Desktop\citycode.csv",'r',encoding='utf-8') as f:
     rawinfos=list(csv.reader(f))
     for i in rawinfos:
         data[i[0]]=i[1]
@@ -21,7 +22,7 @@ def get_one_page(url,headers):
         return None
 headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'}
 try:
-    address=data[sys.argv[1]]
+    address=data[input('city: ')]
 except:
     sys.exit("\033[31m无该城市！\033[0m")
 html=get_one_page('http://www.weather.com.cn/weather1d/'+address+'.shtml',headers)
