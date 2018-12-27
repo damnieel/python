@@ -24,7 +24,7 @@ headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWeb
 try:
     address=data[input('city: ')]
 except:
-    sys.exit("\033[31m无该城市！\033[0m")
+    sys.exit("请输入正确的城市")
 html=get_one_page('http://www.weather.com.cn/weather1d/'+address+'.shtml',headers)
 if not html:
     print("城市代码有误！")
