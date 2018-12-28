@@ -6,7 +6,7 @@ Created on 2018年12月13日
 '''
 
 print ("hello world!")
-
+# print ()
 
 '''
 
@@ -164,12 +164,12 @@ else:
     
 print('--------------------')    
 
-s = input('birth: ')
-birth = int(s)
-if birth < 2000:
-    print('00前')
-else:
-    print('00后')
+#s = input('birth: ')
+#birth = int(s)
+#if birth < 2000:
+#    print('00前')
+#else:
+#    print('00后')
     
 '''
 第一种是for...in循环
@@ -296,3 +296,24 @@ print (a)
 a = 'abc'
 b = a.replace('a', 'A')
 print (b)
+'''
+函数
+'''
+
+print (abs(-100))
+print (max(2, 3, 1, -5))
+print (int('123'))
+print (hex(123))
+
+def my_abs(x):
+    if x >= 0:
+        return x
+    else:
+        return -x
+'''    
+pass语句什么都不做，那有什么用？实际上pass可以用来作为占位符，比如现在还没想好怎么写函数的代码，就可以先放一个pass，让代码能运行起来。
+'''
+def my_pass(x):
+    pass
+print(my_abs(-99))
+print(my_pass(-99))
